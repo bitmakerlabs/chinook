@@ -18,6 +18,7 @@ Chinook uses a PostgreSQL database. You'll need to have it installed and running
 Installing PostgreSQL with Homebrew or with the Postgres.app are recommended.
 
 You can also install PGAdminIII to be able to browse your databases:
+
 1. [Download version 1.18.1 here](http://www.pgadmin.org/download/macosx.php)
 1. Once you've downloaded the .dmg, load it up and drag the PGAdmin app to your applications folder
 1. If you're on Mavericks, you'll need to right-click and "open" the app to launch it
@@ -43,13 +44,12 @@ psql chinook_development < chinook.sql
 ```
 
 Once you're done loading your data, it's time to play! Fire up your Rails Console!
-
 ```bash
 rails console
 ```
-
 or for short
-
 ```bash
 rails c
 ```
+and it should look something like this!
+![](http://cl.ly/image/1c3F0o0a2g0Q/Screen%20Shot%202014-01-29%20at%201.38.28%20PM.png)
