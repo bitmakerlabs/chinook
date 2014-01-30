@@ -37,6 +37,12 @@ Once you've installed PostgreSQL, start by setting up the database by typing the
 rake db:setup
 ```
 
+Add the psql command to bash by inserting the following line into your .bash_profile.
+
+```bash
+export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
+```
+
 There's *a lot of data* to load, so instead of using seeds, we're going to manually import a SQL file with Postgres command line. This make take a moment.
 
 ```bash
