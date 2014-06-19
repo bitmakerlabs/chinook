@@ -37,7 +37,7 @@ Once you've installed PostgreSQL, start by setting up the database by typing the
 rake db:setup
 ```
 
-Add the psql command to bash by inserting the following line into your .bash_profile.
+If you're on a Mac and installed the Postgress.app, you might need to add the psql command to bash by inserting the following line into your .bash_profile.
 
 ```bash
 export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
