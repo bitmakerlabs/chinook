@@ -17,6 +17,13 @@ Chinook uses a PostgreSQL database. You'll need to have it installed and running
 
 Installing PostgreSQL with Homebrew or with the Postgres.app are recommended.
 
+If you're on a Mac and installed the Postgres.app, you might need to add the psql command to bash by inserting the following line into your .bash_profile.
+
+```bash
+export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
+```
+
+
 You can also install PGAdminIII to be able to browse your databases:
 
 1. [Download version 1.18.1 here](http://www.pgadmin.org/download/macosx.php)
@@ -35,12 +42,6 @@ Once you've installed PostgreSQL, start by setting up the database by typing the
 
 ```bash
 rake db:setup
-```
-
-If you're on a Mac and installed the Postgress.app, you might need to add the psql command to bash by inserting the following line into your .bash_profile.
-
-```bash
-export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
 ```
 
 There's *a lot of data* to load, so instead of using seeds, we're going to manually import a SQL file with Postgres command line. This make take a moment.
