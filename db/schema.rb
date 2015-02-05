@@ -11,56 +11,62 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140128205156) do
+ActiveRecord::Schema.define(version: 20141107165750) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "albums", force: true do |t|
+  create_table "albums", force: :cascade do |t|
     t.integer  "artist_id"
-    t.string   "title"
+    t.string   "title",      limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "artists", force: true do |t|
-    t.string   "name"
+  create_table "artists", force: :cascade do |t|
+    t.string   "name",       limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "genres", force: true do |t|
-    t.string   "name"
+  create_table "comments", force: :cascade do |t|
+    t.string   "title",      limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "media_types", force: true do |t|
-    t.string   "name"
+  create_table "genres", force: :cascade do |t|
+    t.string   "name",       limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "playlists", force: true do |t|
-    t.string   "name"
+  create_table "media_types", force: :cascade do |t|
+    t.string   "name",       limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "playlists_tracks", force: true do |t|
+  create_table "playlists", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "playlists_tracks", force: :cascade do |t|
     t.integer "playlist_id"
     t.integer "track_id"
   end
 
-  create_table "tracks", force: true do |t|
+  create_table "tracks", force: :cascade do |t|
     t.integer  "album_id"
     t.integer  "genre_id"
     t.integer  "media_type_id"
-    t.string   "name",                                   null: false
-    t.string   "composer"
-    t.integer  "milliseconds",                           null: false
+    t.string   "name",          limit: 255,                          null: false
+    t.string   "composer",      limit: 255
+    t.integer  "milliseconds",                                       null: false
     t.integer  "bytes"
-    t.decimal  "unit_price",    precision: 10, scale: 2
+    t.decimal  "unit_price",                precision: 10, scale: 2
     t.datetime "created_at"
     t.datetime "updated_at"
   end
