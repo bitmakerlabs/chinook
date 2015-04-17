@@ -20,7 +20,7 @@ Installing PostgreSQL with Homebrew or with the Postgres.app are recommended.
 If you're on a Mac and installed the Postgres.app, you might need to add the psql command to bash by inserting the following line into your .bash_profile.
 
 ```bash
-export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 ```
 
 
