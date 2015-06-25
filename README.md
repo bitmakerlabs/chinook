@@ -23,13 +23,6 @@ If you're on a Mac and installed the Postgres.app, you might need to add the psq
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 ```
 
-
-You can also install PGAdminIII to be able to browse your databases:
-
-1. [Download version 1.18.1 here](http://www.pgadmin.org/download/macosx.php)
-1. Once you've downloaded the .dmg, load it up and drag the PGAdmin app to your applications folder
-1. If you're on Mavericks, you'll need to right-click and "open" the app to launch it
-
 #### Linux (Ubuntu) Users
 
 [Ubuntu Postgres installation](https://help.ubuntu.com/community/PostgreSQL#Installation)
