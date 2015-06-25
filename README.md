@@ -27,8 +27,6 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
 [Ubuntu Postgres installation](https://help.ubuntu.com/community/PostgreSQL#Installation)
 
-This also includes instructions on how to install PGAdminIII, which is a UI you can use to browse your databases!
-
 ## Getting started
 
 Once you've installed PostgreSQL, start by setting up the database by typing the following in your terminal:
