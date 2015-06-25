@@ -357,7 +357,9 @@ COPY albums (id, artist_id, title, created_at, updated_at) FROM stdin;
 -- Name: albums_id_seq; Type: SEQUENCE SET; Schema: public; Owner: juliehache
 --
 
-SELECT pg_catalog.setval('albums_id_seq', 1, false);
+WITH mx AS (SELECT MAX(id) AS id FROM albums)
+SELECT setval('albums_id_seq', mx.id) AS curseq
+FROM mx;
 
 
 --
@@ -647,7 +649,10 @@ COPY artists (id, name, created_at, updated_at) FROM stdin;
 -- Name: artists_id_seq; Type: SEQUENCE SET; Schema: public; Owner: juliehache
 --
 
-SELECT pg_catalog.setval('artists_id_seq', 1, false);
+WITH mx AS (SELECT MAX(id) AS id FROM artists)
+SELECT setval('artists_id_seq', mx.id) AS curseq
+FROM mx;
+
 
 
 --
@@ -687,7 +692,9 @@ COPY genres (id, name, created_at, updated_at) FROM stdin;
 -- Name: genres_id_seq; Type: SEQUENCE SET; Schema: public; Owner: juliehache
 --
 
-SELECT pg_catalog.setval('genres_id_seq', 1, false);
+WITH mx AS (SELECT MAX(id) AS id FROM genres)
+SELECT setval('genres_id_seq', mx.id) AS curseq
+FROM mx;
 
 
 --
@@ -707,7 +714,10 @@ COPY media_types (id, name, created_at, updated_at) FROM stdin;
 -- Name: media_types_id_seq; Type: SEQUENCE SET; Schema: public; Owner: juliehache
 --
 
-SELECT pg_catalog.setval('media_types_id_seq', 1, false);
+WITH mx AS (SELECT MAX(id) AS id FROM media_types)
+SELECT setval('media_types_id_seq', mx.id) AS curseq
+FROM mx;
+
 
 
 --
@@ -740,7 +750,10 @@ COPY playlists (id, name, created_at, updated_at) FROM stdin;
 -- Name: playlists_id_seq; Type: SEQUENCE SET; Schema: public; Owner: juliehache
 --
 
-SELECT pg_catalog.setval('playlists_id_seq', 1, false);
+WITH mx AS (SELECT MAX(id) AS id FROM playlists)
+SELECT setval('playlists_id_seq', mx.id) AS curseq
+FROM mx;
+
 
 
 --
@@ -9470,7 +9483,10 @@ COPY playlists_tracks (id, playlist_id, track_id) FROM stdin;
 -- Name: playlists_tracks_id_seq; Type: SEQUENCE SET; Schema: public; Owner: juliehache
 --
 
-SELECT pg_catalog.setval('playlists_tracks_id_seq', 8715, true);
+WITH mx AS (SELECT MAX(id) AS id FROM playlists_tracks)
+SELECT setval('playlists_tracks_id_seq', mx.id) AS curseq
+FROM mx;
+
 
 --
 -- Data for Name: tracks; Type: TABLE DATA; Schema: public; Owner: juliehache
@@ -12980,3 +12996,7 @@ COPY tracks (id, album_id, genre_id, media_type_id, name, composer, milliseconds
 3420	289	24	2	The Nutcracker, Op. 71a, Act II: Scene 14: Pas de deux: Dance of the Prince & the Sugar-Plum Fairy	Peter Ilyich Tchaikovsky	304226	5184289	0.99	2005-09-02 02:35:55.01287	2014-01-29 22:15:06.231644
 3502	346	24	2	Quintet for Horn, Violin, 2 Violas, and Cello in E Flat Major, K. 407/386c: III. Allegro	Wolfgang Amadeus Mozart	221331	3665114	0.99	2012-03-30 16:25:42.886597	2014-01-29 22:15:06.247455
 \.
+
+WITH mx AS (SELECT MAX(id) AS id FROM tracks)
+SELECT setval('tracks_id_seq', mx.id) AS curseq
+FROM mx;
