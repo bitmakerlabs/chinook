@@ -157,8 +157,13 @@ Of course, these can be done as one or more steps.
 
 ```
 
+4. Find all the Tracks that belong to the first Playlist.
+```ruby
+# Enter your answer below
 
-4. Find all the Tracks that belong to the 2 most recent Playlist.
+```
+
+5. Find all the Tracks that belong to the 2 most recent playlists.
 ```ruby
 # Enter your answer below
 
