@@ -159,7 +159,7 @@ Of course, these can be done as one or more steps.
 # Enter your answer below
 
 ```
-5) Find all the Tracks that belong to the 2 most recent playlists.
+5) Find all the Tracks that belong to the 2 most recent playlists. *(HINT: This takes at least two ActiveRecord queries)*
 ```ruby
 # Enter your answer below
 
