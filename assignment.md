@@ -19,6 +19,8 @@ Of course, these can be done as one or more steps.
 
 Check out [W3Schools' SQL Reference](http://www.w3schools.com/sql/sql_syntax.asp) as a reference.
 
+**Answer with SQL code, not the query results!**
+
 1. Count how many tracks belong to the MediaType "Protected MPEG-4 video file".
 ```SQL
 /* Add your answer below */
@@ -134,6 +136,8 @@ Track.minimum(:unit_price)
 
 ### Exercise
 Of course, these can be done as one or more steps.
+
+**Answer with Ruby code, not the query results!**
 
 1. Count how many tracks belong to the "Hip Hop/Rap" genre
 ```ruby
