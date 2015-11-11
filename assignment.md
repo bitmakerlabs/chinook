@@ -111,7 +111,7 @@ Artist.where(name: 'AC/DC')
 You can order your queries based on one or more column with `.order`. [See more details here](http://guides.rubyonrails.org/active_record_querying.html#ordering). It can be used alone or chained with other query statements.
 
 ```ruby
-Album.where(artist_id: 1).order("created_at DESC")
+Album.where(artist_id: 1).order(created_at: :desc)
 ```
 
 #### Limit
