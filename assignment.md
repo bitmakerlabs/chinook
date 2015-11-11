@@ -21,25 +21,25 @@ Check out [W3Schools' SQL Reference](http://www.w3schools.com/sql/sql_syntax.asp
 
 **Answer with SQL code, not the query results!**
 
-1. Count how many tracks belong to the MediaType "Protected MPEG-4 video file".
+1) Count how many tracks belong to the MediaType "Protected MPEG-4 video file".
 ```SQL
 /* Add your answer below */
 
 ```
 
-2. Find the least expensive Track that has the Genre "Electronica/Dance".
+2) Find the least expensive Track that has the Genre "Electronica/Dance".
 ```SQL
 /* Add your answer below */
 
 ```
 
-3. Find the all the Artists whose names start with A.
+3) Find the all the Artists whose names start with A.
 ```SQL
 /* Add your answer below */
 
 ```
 
-4. Find all the Tracks that belong to the first Playlist.
+4) Find all the Tracks that belong to the first Playlist.
 ```SQL
 /* Add your answer below */
 
@@ -139,31 +139,27 @@ Of course, these can be done as one or more steps.
 
 **Answer with Ruby code, not the query results!**
 
-1. Count how many tracks belong to the "Hip Hop/Rap" genre
+1) Count how many tracks belong to the "Hip Hop/Rap" genre
 ```ruby
 # Enter your answer below
 
 ```
-
-2. Find the most expensive Track that has the MediaType "MPEG audio file".
+2) Find the most expensive Track that has the MediaType "MPEG audio file".
 ```ruby
 # Enter your answer below
 
 ```
-
-3. Find the 2 oldest Artists.
+3) Find the 2 oldest Artists.
 ```ruby
 # Enter your answer below
 
 ```
-
-4. Find all the Tracks that belong to the first Playlist.
+4) Find all the Tracks that belong to the first Playlist.
 ```ruby
 # Enter your answer below
 
 ```
-
-5. Find all the Tracks that belong to the 2 most recent playlists.
+5) Find all the Tracks that belong to the 2 most recent playlists.
 ```ruby
 # Enter your answer below
 
