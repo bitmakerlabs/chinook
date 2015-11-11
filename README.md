@@ -51,3 +51,7 @@ rails c
 ```
 and it should look something like this!
 ![](http://cl.ly/image/1c3F0o0a2g0Q/Screen%20Shot%202014-01-29%20at%201.38.28%20PM.png)
+
+Before attempting [the assignment](https://github.com/bitmakerlabs/chinook/blob/master/assignment.md) take a moment to familiarize yourself with the tables, columns, and foreign key relationships in your database:
+
+![](erd.png)

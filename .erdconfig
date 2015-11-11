@@ -1,0 +1,5 @@
+attributes:
+  - content
+  - foreign_keys
+  - primary_keys
+prepend_primary: true
