@@ -25,25 +25,45 @@ Check out [W3Schools' SQL Reference](http://www.w3schools.com/sql/sql_syntax.asp
 ```SQL
 /* Add your answer below */
 
-```
+SELECT id FROM media_types WHERE name='Protected MPEG-4 video file';
+ id 
+----
+ ==>3
+
+	SELECT COUNT(media_type_id) FROM tracks WHERE media_type_id=3;
+ count 
+-------
+ #answer  214
 
 2) Find the least expensive Track that has the Genre "Electronica/Dance".
 ```SQL
 /* Add your answer below */
 
-```
+SELECT id FROM genres WHERE name='Electronica/Dance';
+ id 
+----
+==> 15
 
+	SELECT MIN(name) FROM tracks WHERE id=15;
+   min   
+---------
+ #answer Go Down
+
+	SELECT MIN(unit_price) FROM tracks WHERE name='Go Down';
+ min  
+------
+ #answer 0.99
 3) Find the all the Artists whose names start with A.
 ```SQL
 /* Add your answer below */
 
-```
+SELECT DISTINCT(name) FROM artists WHERE name LIKE'A%';
 
 4) Find all the Tracks that belong to the first Playlist.
 ```SQL
 /* Add your answer below */
 
-```
+SELECT id FROM playlists_tracks WHERE playlist_id='1';
 
 ## Active Record Query Interface
 In order to complete these exercises, you'll need to launch your Rails console with
@@ -143,25 +163,35 @@ Of course, these can be done as one or more steps.
 ```ruby
 # Enter your answer below
 
-```
+Genre.find_by(name: "Hip Hop/Rap")
+
+	Track.where(genre_id: 17).count
+   
+#answer => 35
+
 2) Find the most expensive Track that has the MediaType "MPEG audio file".
 ```ruby
 # Enter your answer below
 
-```
+Track.where(media_type_id:1).maximum(:unit_price).to_f            
+#answer => 0.99
+
 3) Find the 2 oldest Artists.
 ```ruby
 # Enter your answer below
 
-```
+Artist.order("created_at ASC").limit(2)
+
 4) Find all the Tracks that belong to the first Playlist.
 ```ruby
 # Enter your answer below
 
-```
+Playlist.order("created_at DESC").first.tracks
+
 5) Find all the Tracks that belong to the 2 most recent playlists. *(HINT: This takes at least two ActiveRecord queries)*
 ```ruby
 # Enter your answer below
 
-```
+Playlist.order("created_at DESC")[0].tracks
+Playlist.order("created_at DESC")[1].tracks
 
