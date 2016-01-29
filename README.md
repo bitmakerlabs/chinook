@@ -54,4 +54,8 @@ and it should look something like this!
 
 Before attempting [the assignment](https://github.com/bitmakerlabs/chinook/blob/master/assignment.md) take a moment to familiarize yourself with the tables, columns, and foreign key relationships in your database:
 
+![](chinook_schema.png)
+
+And in the corresponding Rails models:
 ![](erd.png)
+
