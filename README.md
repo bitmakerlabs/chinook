@@ -25,7 +25,9 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 #### Linux (Ubuntu) Users
 
-[Ubuntu Postgres installation](https://help.ubuntu.com/community/PostgreSQL#Installation)
+If you already went through the [Bitmaker set-up guide for Ubuntu](https://github.com/bitmakerlabs/dev_environment_setup) you should already have PostgreSQL installed and ready to go.  If not you can follow the instructions in the section called 'Installing PostgreSQL'.
+
+Alternatively, sections [3](https://help.ubuntu.com/community/PostgreSQL#Installation) and [5](https://help.ubuntu.com/community/PostgreSQL#Alternative_Server_Setup) of the [Ubuntu Postgres installation guide](https://help.ubuntu.com/community/PostgreSQL#Installation) may be useful.
 
 ## Getting started
 
