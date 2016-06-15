@@ -153,22 +153,22 @@ Answer each of the following with one or more Active Record queries:
 # Enter your code below
 
 ```
-3) Find the total amount of time required to listen to all the tracks in the database.
+2) Find the total amount of time required to listen to all the tracks in the database.
 ```ruby
 # Enter your code below
 
 ```
-4a) Find the highest price of any track that has the media type "MPEG audio file".
+3a) Find the highest price of any track that has the media type "MPEG audio file".
 ```ruby
 # Enter your code below
 
 ```
-4b) Find the name of the most expensive track that has the media type "MPEG audio file".
+3b) Find the name of the most expensive track that has the media type "MPEG audio file".
 ```ruby
 # Enter your code below
 
 ```
-5) Find the 2 oldest artists.
+4) Find the 2 oldest artists.
 ```ruby
 # Enter your code below
 
