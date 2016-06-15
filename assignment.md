@@ -15,33 +15,38 @@ To quit, simply type ctrl + d.
 
 ### Exercises
 
-Of course, these can be done as one or more steps.
 
 Check out [W3Schools' SQL Reference](http://www.w3schools.com/sql/sql_syntax.asp) as a reference.
 
-**Answer with SQL code, not the query results!**
+Answer each of the following with one or more SQL queries:
 
-1) Count how many tracks belong to the MediaType "Protected MPEG-4 video file".
+1) Find the albums recorded by the artist Queen.
 ```SQL
-/* Add your answer below */
+/* Add your code below */
 
 ```
 
-2) Find the least expensive Track that has the Genre "Electronica/Dance".
+2) [Count](http://www.w3schools.com/sql/sql_func_count.asp) how many tracks belong to the media type "Protected MPEG-4 video file".
 ```SQL
-/* Add your answer below */
+/* Add your code below */
 
 ```
 
-3) Find the all the Artists whose names start with A.
+3) Find the least expensive track that has the genre "Electronica/Dance".
 ```SQL
-/* Add your answer below */
+/* Add your code below */
 
 ```
 
-4) Find all the Tracks that belong to the first Playlist.
+4) Find the all the artists whose names start with A.
 ```SQL
-/* Add your answer below */
+/* Add your code below */
+
+```
+
+5) Find all the tracks that belong to playlist 1.
+```SQL
+/* Add your code below */
 
 ```
 
@@ -135,33 +140,56 @@ Track.minimum(:unit_price)
 ```
 
 ### Exercise
-Of course, these can be done as one or more steps.
 
-**Answer with Ruby code, not the query results!**
+Answer each of the following with one or more Active Record queries:
 
-1) Count how many tracks belong to the "Hip Hop/Rap" genre
+1a) Find the genre with the name "Hip Hop/Rap".
 ```ruby
-# Enter your answer below
+# Enter your code below
 
 ```
-2) Find the most expensive Track that has the MediaType "MPEG audio file".
+1b) Count how many tracks belong to the "Hip Hop/Rap" genre
 ```ruby
-# Enter your answer below
+# Enter your code below
 
 ```
-3) Find the 2 oldest Artists.
+3) Find the total amount of time required to listen to all the tracks in the database.
 ```ruby
-# Enter your answer below
+# Enter your code below
 
 ```
-4) Find all the Tracks that belong to the first Playlist.
+4a) Find the highest price of any track that has the media type "MPEG audio file".
 ```ruby
-# Enter your answer below
+# Enter your code below
 
 ```
-5) Find all the Tracks that belong to the 2 most recent playlists. *(HINT: This takes at least two ActiveRecord queries)*
+4b) Find the name of the most expensive track that has the media type "MPEG audio file".
 ```ruby
-# Enter your answer below
+# Enter your code below
+
+```
+5) Find the 2 oldest artists.
+```ruby
+# Enter your code below
 
 ```
 
+### Stretch Exercises (Active Record Query Interface)
+
+Some of these questions require the use of [joins](http://guides.rubyonrails.org/active_record_querying.html#joining-tables) (see also [this link](http://www.w3schools.com/sql/sql_join.asp)).
+
+1) Find all the tracks that belong to the first playlist.
+```ruby
+# Enter your code below
+
+```
+2) Write a series of queries to find all the tracks that belong to the 2 most recent playlists.
+```ruby
+# Enter your code below
+
+```
+3) Find all the albums whose titles start with B.
+```ruby
+# Enter your code below
+
+```
