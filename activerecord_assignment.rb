@@ -28,19 +28,7 @@
 
 
 
-### Stretch Exercises (Active Record Query Interface)
-
-### Some of these questions require the use of joins
-### http://guides.rubyonrails.org/active_record_querying.html#joining-tables
-### (see also http://www.w3schools.com/sql/sql_join.asp)
+### Stretch Exercise (Active Record Query Interface)
 
 
-# 1) Find all the tracks that belong to the first playlist.
-
-
-
-# 2) Write a series of queries to find all the tracks that belong to the 2 most recent playlists.
-
-
-
-# 3) Find all the albums whose titles start with B.
+# 1) Find all the albums whose titles start with B.
