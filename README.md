@@ -34,7 +34,7 @@ Alternatively, sections [3](https://help.ubuntu.com/community/PostgreSQL#Install
 Once you've installed PostgreSQL, start by setting up the database by typing the following in your terminal:
 
 ```bash
-rake db:setup
+bin/rake db:setup
 ```
 
 There's *a lot of data* to load, so instead of using seeds, we're going to manually import a SQL file with Postgres command line. This make take a moment.
