@@ -1,2 +1,2 @@
-class Genre < ActiveRecord::Base
+class Genre < ApplicationRecord
 end

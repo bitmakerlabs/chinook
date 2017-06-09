@@ -1,2 +1,2 @@
-class MediaType < ActiveRecord::Base
+class MediaType < ApplicationRecord
 end
