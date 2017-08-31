@@ -4,21 +4,20 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
-# Ignore any OS X generated DS_Store files
-.DS_Store
-
 # Ignore bundler config.
-*/.bundle
+/.bundle
 
 # Ignore the default SQLite database.
-*/db/*.sqlite3
-*/db/*.sqlite3-journal
+/db/*.sqlite3
+/db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
-*/log/*.log
-*/tmp
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
 
-*~
-*.swp
-*.swn
-*.swo
+/node_modules
+/yarn-error.log
+
+.byebug_history
